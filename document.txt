@@ -1,0 +1,28 @@
+/*******************************  USER APIS  *******************************/
+1. User Registration:
+       API: http://localhost:5000/api/user/register,
+       METHOD: post,
+       BODY: name, username, email, password
+
+2. User Login:
+       API: http://localhost:5000/api/user/login,
+       METHOD: post,
+       BODY: username, password
+
+3. User profile image upload:
+        API: http://localhost:5000/api/user/upload/image
+        METHOD: put,
+        BODY: image,
+        HEADER: x-access-token {token}
+
+4. User profile search:
+        API: http://localhost:5000/api/user/search/user?search={SEARCH_KEYWORD}
+        METHOD: get,
+        BODY: None,
+        HEADER: x-access-token {token}
+
+5. Fetch user profile details:
+        API: http://localhost:5000/api/user
+        METHOD: get,
+        BODY: None,
+        HEADER: x-access-token {token}
